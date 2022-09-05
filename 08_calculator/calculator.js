@@ -7,11 +7,7 @@ const subtract = function(a, b) {
 };
 
 const sum = function(array) {
-	let sumValue = 0;
-  for (let i=0; i<array.length; i++){
-    sumValue += array[i];
-  }
-  return sumValue
+	return array.reduce((total,current) => total + current, 0);
 };
 
 const multiply = function(array) {
@@ -30,7 +26,7 @@ const factorial = function(value) {
   if (value === 0){
     return 1;
   }
-  
+
 	let total = value;
   while (value > 1){
     value -= 1;
