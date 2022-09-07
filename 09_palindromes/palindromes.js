@@ -1,8 +1,6 @@
 const palindromes = function (string) {
     //Convert to array and filter out spaces and punctuation with regex
-    const stringFiltered = Array.from(string.toLowerCase()).filter((element) => {
-        /[a-z]/.test(element)
-    })
+    const stringFiltered = Array.from(string.toLowerCase()).filter(element => /[a-z]/.test(element));
 
     //Join array back into string
     const stringForward = stringFiltered.join("");
